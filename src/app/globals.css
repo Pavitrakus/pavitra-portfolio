@@ -8,8 +8,13 @@
 
 @layer base {
   :root {
-    --background: #f5f5f4;
+    --background: #e5e5e5;
     --foreground: #1f2937;
+  }
+  @media (min-width: 640px) {
+    :root {
+      --background: #f5f5f4;
+    }
   }
 }
 
