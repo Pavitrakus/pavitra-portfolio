@@ -29,9 +29,16 @@ export function Blog() {
         </div>
       </section>
       
-      <svg className="hidden sm:block fill-white -mt-px h-6 sm:h-12 max-w-6xl mx-auto relative z-20" width="100%" height="100" viewBox="0 0 1152 59" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <path fillRule="evenodd" clipRule="evenodd" d="M1152 0.999781V0.510196H0V47.9998C0 54.8232 5.68201 60.2734 12.4995 59.9894L1140.5 12.9894C1146.93 12.7216 1152 7.43288 1152 0.999781Z"></path>
-      </svg>
+      {/* PERFECT TILTED CUTS */}
+      <div className="hidden sm:block">
+        <svg className="w-full h-12 text-white fill-current max-w-6xl mx-auto block" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0,0 100,0 0,100" />
+        </svg>
+        <div className="h-6"></div>
+        <svg className="w-full h-12 text-white fill-current max-w-6xl mx-auto block" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0,100 100,0 100,100" />
+        </svg>
+      </div>
     </>
   );
 }
