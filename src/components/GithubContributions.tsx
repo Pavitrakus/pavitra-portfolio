@@ -20,16 +20,9 @@ export function GithubContributions() {
         </div>
       </section>
       
-      {/* PERFECT TILTED CUTS */}
-      <div className="hidden sm:block">
-        <svg className="w-full h-12 text-white fill-current max-w-6xl mx-auto block" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <polygon points="0,0 100,0 0,100" />
-        </svg>
-        <div className="h-6"></div>
-        <svg className="w-full h-12 text-white fill-current max-w-6xl mx-auto block" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <polygon points="0,100 100,0 100,100" />
-        </svg>
-      </div>
+      <svg className="fill-white -mt-px h-6 sm:h-12 max-w-6xl mx-auto relative z-20" width="100%" height="100" viewBox="0 0 1152 59" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path fillRule="evenodd" clipRule="evenodd" d="M0 59.5105V60.0001H1152V12.5105C1152 5.68705 1146.32 0.236812 1139.5 0.520875L11.5004 47.5209C5.07291 47.7887 0 53.0774 0 59.5105Z"></path>
+      </svg>
     </>
   );
 }

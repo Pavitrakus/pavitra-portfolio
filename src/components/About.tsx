@@ -15,7 +15,7 @@ export function About() {
           </p>
 
           <p className="leading-relaxed">
-            I&apos;m obsessed with understanding intelligence,how to build it, accelerate it, and eventually, define it.
+            I&apos;m obsessed with understanding intelligence, how to build it, accelerate it, and eventually, define it.
             <span className="block mt-4 p-3 bg-[#fcf9f2] rounded-lg font-playfair italic text-gray-800 shadow-sm border border-[#f5eedc] sm:inline sm:mt-0 sm:p-0 sm:bg-transparent sm:border-transparent sm:font-sans sm:not-italic sm:shadow-none sm:rounded-none sm:text-inherit">
               Founder of <button onClick={() => setShowPaxusDesc(!showPaxusDesc)} className="font-serif font-bold text-black hover:underline cursor-pointer focus:outline-none align-baseline not-italic">PaXus</button>
               {showPaxusDesc && (
@@ -28,7 +28,7 @@ export function About() {
           </p>
 
           <p className="leading-relaxed">
-            For fun, I break APIs, win hackathons, write about 2045, do researches on the <a href="https://www.simulation-argument.com/simulation.pdf" target="_blank" rel="noopener noreferrer" className="underline font-bold text-[#B07D54] hover:text-[#96633D] transition-colors">Simulation Hypothesis</a>, and go on long bike rides.
+            For fun, I break APIs, win hackathons, write about 2045, do research on the <a href="https://www.simulation-argument.com/simulation.pdf" target="_blank" rel="noopener noreferrer" className="underline font-bold text-[#B07D54] hover:text-[#96633D] transition-colors">Simulation Hypothesis</a>, and go on long bike rides.
           </p>
 
           <p className="text-sm mt-[-8px] text-gray-500">
