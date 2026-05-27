@@ -38,10 +38,10 @@ export function Hero() {
       </section>
 
       {/* SVG Transition matching the HTML */}
-      <svg className="fill-[var(--background)] transition-colors duration-300 -mt-10 h-10 sm:-mt-16 sm:h-16 max-w-6xl mx-auto relative z-10" width="100%" height="59" viewBox="0 0 1152 59" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <svg className="fill-[var(--background)] transition-colors duration-300 -mt-6 h-6 sm:-mt-12 sm:h-12 max-w-6xl mx-auto relative z-10" width="100%" height="59" viewBox="0 0 1152 59" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
         <path fillRule="evenodd" clipRule="evenodd" d="M0 47.0001V59.0002H11.9299C11.9701 59.0004 12.0104 59.0004 12.0506 59.0002H1152V0C1152 6.43303 1146.93 11.7322 1140.5 12L12.4995 58.9897C12.3493 58.9959 12.1997 58.9994 12.0506 59.0002H11.9299C5.36844 58.9676 0 53.6326 0 47.0001Z"></path>
       </svg>
-      <svg className="fill-white h-10 sm:h-16 max-w-6xl mx-auto" width="100%" height="100" viewBox="0 0 1152 59" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <svg className="fill-white -mt-px h-6 sm:h-12 max-w-6xl mx-auto relative z-20" width="100%" height="100" viewBox="0 0 1152 59" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
         <path fillRule="evenodd" clipRule="evenodd" d="M0 59.5105V60.0001H1152V12.5105C1152 5.68705 1146.32 0.236812 1139.5 0.520875L11.5004 47.5209C5.07291 47.7887 0 53.0774 0 59.5105Z"></path>
       </svg>
     </>
