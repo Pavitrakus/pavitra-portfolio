@@ -20,7 +20,7 @@ export function GithubContributions() {
         </div>
       </section>
       
-      <svg className="fill-white h-6 sm:h-12 max-w-6xl mx-auto" width="100%" height="100" viewBox="0 0 1152 59" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <svg className="fill-white h-10 sm:h-16 max-w-6xl mx-auto" width="100%" height="100" viewBox="0 0 1152 59" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
         <path fillRule="evenodd" clipRule="evenodd" d="M0 59.5105V60.0001H1152V12.5105C1152 5.68705 1146.32 0.236812 1139.5 0.520875L11.5004 47.5209C5.07291 47.7887 0 53.0774 0 59.5105Z"></path>
       </svg>
     </>
