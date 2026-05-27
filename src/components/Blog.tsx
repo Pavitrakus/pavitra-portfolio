@@ -1,8 +1,7 @@
 export function Blog() {
   const posts = [
-    { date: "Oct 24", title: "My 2045 Thesis — Why I think AGI arrives then, not sooner." },
-    { date: "Aug 24", title: "How I Reverse-Engineered a Delivery API to Build ORCA" },
-    { date: "May 24", title: "What Running a Hackathon at 16 Taught Me About People" },
+    { date: "Aug 24", title: "HOW I REVERSE ENGINEERED...." },
+    { date: "Oct 24", title: "HUMAN ON MACHINE YEAR 2045" },
   ];
 
   return (
