@@ -166,7 +166,7 @@ export function Highlights() {
 
   return (
     <>
-      <section id="highlights" className="px-5 pt-2 pb-8 max-w-6xl mx-auto bg-[#fdfbf7] sm:bg-white">
+      <section id="highlights" className="px-5 pt-2 pb-8 max-w-6xl mx-auto bg-white">
         <div className="max-w-5xl mx-auto">
           <p className="text-xl text-gray-800 mb-2">Here are the coolest things I&apos;ve done:</p>
           <div className="w-16 h-0.5 bg-gray-200 mb-6"></div>

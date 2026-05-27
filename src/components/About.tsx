@@ -5,7 +5,7 @@ import { useState } from 'react';
 export function About() {
   const [showPaxusDesc, setShowPaxusDesc] = useState(false);
   return (
-    <section id="about" className="px-5 pt-16 pb-4 sm:pt-16 sm:pb-4 max-w-6xl mx-auto bg-[#fdfbf7] sm:bg-white relative">
+    <section id="about" className="px-5 pt-16 pb-4 sm:pt-16 sm:pb-4 max-w-6xl mx-auto bg-white relative">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl font-bold font-serif text-gray-900">Hey there!</h1>
 

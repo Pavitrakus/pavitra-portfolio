@@ -10,7 +10,7 @@ export function Projects() {
   ];
 
   return (
-    <section id="projects" className="px-5 pb-16 pt-8 max-w-6xl mx-auto bg-[#fdfbf7] sm:bg-white">
+    <section id="projects" className="px-5 pb-16 pt-8 max-w-6xl mx-auto bg-white">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-gray-900 text-5xl font-bold font-serif">Projects</h1>
         <div className="mt-2 text-2xl text-gray-800">Here&apos;s a collection of some of my favorite work!</div>
