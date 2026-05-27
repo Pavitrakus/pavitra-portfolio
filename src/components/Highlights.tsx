@@ -25,7 +25,7 @@ export function Highlights() {
       ),
     },
     {
-      icon: "🍊",
+      icon: <div className="w-6 h-6 rounded bg-[#FF6600] text-white flex items-center justify-center font-bold text-[13px] leading-none shrink-0 font-sans">Y</div>,
       text: (
         <span>
           Got selected for{" "}
@@ -166,9 +166,10 @@ export function Highlights() {
 
   return (
     <>
-      <section id="highlights" className="px-5 pt-2 pb-8 max-w-6xl mx-auto bg-white">
+      <section id="highlights" className="px-5 pt-2 pb-8 max-w-6xl mx-auto bg-[#fdfbf7] sm:bg-white">
         <div className="max-w-5xl mx-auto">
-          <p className="text-xl text-gray-800 mb-4">Here are the coolest things I&apos;ve done:</p>
+          <p className="text-xl text-gray-800 mb-2">Here are the coolest things I&apos;ve done:</p>
+          <div className="w-16 h-0.5 bg-gray-200 mb-6"></div>
           <ul className="gap-3 flex flex-col text-lg text-gray-800">
             {highlights.map((item, i) => (
               <li key={i} className="flex items-start">

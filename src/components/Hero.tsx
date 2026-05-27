@@ -24,17 +24,8 @@ export function Hero() {
           </motion.h2>
         </div>
         
-        {/* Dark Video / Gradient Background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50 -z-10" />
-        <video 
-          autoPlay 
-          muted 
-          loop 
-          playsInline 
-          className="absolute top-0 left-0 w-full h-full object-cover -z-20 opacity-80"
-        >
-          <source src="/hero-bg.mp4" type="video/mp4" />
-        </video>
+        {/* Dark Background */}
+        <div className="absolute inset-0 bg-slate-900 -z-10" />
       </section>
 
       {/* SVG Transition matching the HTML */}

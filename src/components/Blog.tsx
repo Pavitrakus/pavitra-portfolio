@@ -7,7 +7,7 @@ export function Blog() {
 
   return (
     <>
-      <section id="blog" className="px-5 p-8 max-w-6xl mx-auto bg-white">
+      <section id="blog" className="px-5 p-8 max-w-6xl mx-auto bg-[#fdfbf7] sm:bg-white">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-gray-900 text-4xl font-bold font-serif">Blog</h1>
           <div className="mt-2 text-xl sm:text-2xl text-gray-800">Here&apos;s some writing about cool things I&apos;ve done!</div>

@@ -5,7 +5,7 @@ import { useState } from 'react';
 export function About() {
   const [showPaxusDesc, setShowPaxusDesc] = useState(false);
   return (
-    <section id="about" className="px-5 pt-16 pb-4 sm:pt-16 sm:pb-4 max-w-6xl mx-auto bg-white relative">
+    <section id="about" className="px-5 pt-16 pb-4 sm:pt-16 sm:pb-4 max-w-6xl mx-auto bg-[#fdfbf7] sm:bg-white relative">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl font-bold font-serif text-gray-900">Hey there!</h1>
 
@@ -17,13 +17,13 @@ export function About() {
           <p className="leading-relaxed">
             I&apos;m obsessed with understanding intelligence,how to build it, accelerate it, and eventually, define it.
             <span className="block mt-4 p-3 bg-[#fcf9f2] rounded-lg font-playfair italic text-gray-800 shadow-sm border border-[#f5eedc] sm:inline sm:mt-0 sm:p-0 sm:bg-transparent sm:border-transparent sm:font-sans sm:not-italic sm:shadow-none sm:rounded-none sm:text-inherit">
-              I&apos;m the founder of <button onClick={() => setShowPaxusDesc(!showPaxusDesc)} className="font-serif font-bold text-black hover:underline cursor-pointer focus:outline-none align-baseline not-italic">PaXus</button>
+              Founder of <button onClick={() => setShowPaxusDesc(!showPaxusDesc)} className="font-serif font-bold text-black hover:underline cursor-pointer focus:outline-none align-baseline not-italic">PaXus</button>
               {showPaxusDesc && (
                 <span className="text-gray-600 text-[0.9em] transition-all duration-300 not-italic block sm:inline">
                   {" "}(a multi-venture technology company driving innovation across AI, software development, digital commerce, and intelligent systems)
                 </span>
               )}
-              {" "}and <a href="https://byteforge.space" target="_blank" rel="noopener noreferrer" className="font-playfair font-semibold text-black hover:underline not-italic">byteforge</a><span className="not-italic text-[#39FF14] font-black font-serif select-none">.</span> My ultimate goal is to build something dents <a href="https://www.google.com/search?q=Silicon+Valley" target="_blank" rel="noopener noreferrer" className="text-blue-600 font-bold hover:underline transition-colors not-italic">Silicon Valley</a>.
+              {" "}and <a href="https://byteforge.space" target="_blank" rel="noopener noreferrer" className="font-playfair font-semibold text-black hover:underline not-italic">byteforge</a><span className="not-italic text-[#39FF14] font-black font-serif select-none">.</span> My ultimate goal is to build something that dents <a href="https://www.google.com/search?q=Silicon+Valley" target="_blank" rel="noopener noreferrer" className="text-blue-600 font-bold hover:underline transition-colors not-italic">Silicon Valley</a>.
             </span>
           </p>
 
