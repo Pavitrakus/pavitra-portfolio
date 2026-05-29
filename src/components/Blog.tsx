@@ -21,7 +21,20 @@ export function Blog() {
           <h1 className="text-gray-900 text-4xl font-bold font-serif">Blog</h1>
           <div className="mt-2 text-xl text-gray-500 font-mono">writing soon. stay tuned.</div>
           
-          <div className="mt-8 max-w-md">
+          {/* Blog Posts */}
+          <div className="mt-8 grid sm:grid-cols-2 gap-6">
+            <a
+              href="/blogs/fishy-mesh"
+              className="hover:-rotate-1 hover:scale-105 transform transition p-4 rounded-lg relative group overflow-hidden border border-orange-400 bg-orange-400/10 flex flex-col justify-between"
+            >
+              <div className="text-left text-black flex flex-col gap-2 relative z-10">
+                <p className="text-sm font-serif w-fit rounded-md px-1 py-0.5 bg-orange-400/40">2025</p>
+                <h2 className="text-2xl font-serif leading-tight mt-2">Fishy Mesh</h2>
+              </div>
+            </a>
+          </div>
+
+          <div className="mt-10 max-w-md">
             {sent ? (
               <p className="font-mono text-sm text-green-600">you&apos;re on the list :)</p>
             ) : (

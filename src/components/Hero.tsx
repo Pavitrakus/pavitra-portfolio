@@ -12,7 +12,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             className="font-bold text-5xl md:text-6xl font-serif"
           >
-            Pavitra<span className="text-gray-300">.</span>
+            Pavitra Kushwaha
           </motion.h1>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}

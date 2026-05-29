@@ -12,7 +12,7 @@ export function NavBar() {
       className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-5 text-white max-w-5xl mx-auto"
     >
       <Link href="/" className="text-xl font-bold tracking-tighter hover:underline font-serif">
-        pavitra
+        pavitra.
       </Link>
       
       <div className="flex gap-4 md:gap-7 items-center text-[0.85rem] md:text-[0.95rem] font-mono opacity-80">
