@@ -41,3 +41,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 <!-- Deployment info: Hosted on Firebase hosting -->
 
+
+<!-- Dev setup: Run 'npm run dev' to start local server -->
+
