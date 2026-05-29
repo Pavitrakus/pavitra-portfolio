@@ -12,7 +12,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             className="font-bold text-5xl md:text-6xl font-serif"
           >
-            Pavitra Kushwaha
+            Pavitra Kushwaha.
           </motion.h1>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -22,6 +22,16 @@ export function Hero() {
           >
             founder &bull; builder &bull; researcher @ IIT Kanpur
           </motion.h2>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="mt-8"
+          >
+            <a href="https://cal.com/pavitrakushwaha" target="_blank" rel="noopener noreferrer" className="inline-block border border-blue-400/50 text-blue-200 px-6 py-2.5 rounded-full font-mono text-sm hover:bg-blue-500/10 hover:border-blue-400 transition-all">
+              call me
+            </a>
+          </motion.div>
         </div>
         
         {/* Dark Video / Gradient Background */}

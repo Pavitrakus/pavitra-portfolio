@@ -19,12 +19,12 @@ export function NavBar() {
         <Link href="#projects" className="hover:opacity-100 hover:underline underline-offset-4 transition-opacity hidden sm:inline">
           i do :)
         </Link>
-        <Link href="#contact" className="hover:opacity-100 hover:underline underline-offset-4 transition-opacity hidden sm:inline">
+        <Link href="/blog" className="hover:opacity-100 hover:underline underline-offset-4 transition-opacity hidden sm:inline">
+          blogs
+        </Link>
+        <Link href="/contact" className="hover:opacity-100 hover:underline underline-offset-4 transition-opacity hidden sm:inline text-blue-200">
           contact
         </Link>
-        <a href="https://cal.com/pavitrakushwaha" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 hover:underline underline-offset-4 transition-opacity text-blue-200">
-          call me
-        </a>
         <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="border border-white/50 px-3 py-1 rounded-full hover:bg-white hover:text-black transition-colors font-sans font-medium text-xs md:text-sm">
           resume
         </a>
