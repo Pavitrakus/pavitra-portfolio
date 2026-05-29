@@ -12,12 +12,12 @@ export function NavBar() {
       className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-5 text-white max-w-5xl mx-auto"
     >
       <Link href="/" className="text-xl font-bold tracking-tighter hover:underline font-serif">
-        pavitra.gg
+        pavitrakushwaha.dev
       </Link>
       
       <div className="flex gap-7 text-[0.95rem] font-mono opacity-80">
         <Link href="#projects" className="hover:opacity-100 hover:underline underline-offset-4 transition-opacity">
-          projects
+          i do :)
         </Link>
         <Link href="#contact" className="hover:opacity-100 hover:underline underline-offset-4 transition-opacity">
           contact
