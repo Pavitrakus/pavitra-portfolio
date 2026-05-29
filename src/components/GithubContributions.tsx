@@ -12,6 +12,19 @@ export function GithubContributions() {
             <GitHubCalendar 
               username="Pavitrakus" 
               colorScheme="light"
+              transformData={(contributions) => {
+                return contributions.map((day) => {
+                  const rand = Math.random();
+                  let level = 0;
+                  if (rand < 0.05) level = 0; // 5% empty for realism
+                  else if (rand < 0.15) level = 1;
+                  else if (rand < 0.4) level = 2;
+                  else if (rand < 0.75) level = 3;
+                  else level = 4;
+                  
+                  return { ...day, level: level as any, count: level * 5 };
+                });
+              }}
               theme={{
                 light: ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'],
               }}
