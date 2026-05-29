@@ -34,6 +34,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pavitra Kushwaha | Founder • Builder • Researcher",
     description: "Personal website of Pavitra Kushwaha, building Synthetic Intelligence and ORCA.",
+    creator: "@Pavitra_Kushwah",
+    site: "@Pavitra_Kushwah",
   },
 };
 
@@ -45,7 +47,9 @@ const jsonLd = {
   "jobTitle": "Founder & AI Researcher",
   "sameAs": [
     "https://github.com/Pavitrakus",
-    "https://linkedin.com/in/pavitrakushwaha"
+    "https://www.linkedin.com/in/pavitra-kushwaha/",
+    "https://x.com/Pavitra_Kushwah",
+    "https://www.instagram.com/pavitrakuswaha/"
   ],
   "knowsAbout": ["Artificial Intelligence", "Synthetic Intelligence", "Software Engineering", "Agentic AI"],
   "description": "Personal website of Pavitra Kushwaha, building Synthetic Intelligence and ORCA.",

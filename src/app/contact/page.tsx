@@ -40,15 +40,15 @@ export default function ContactPage() {
                 </li>
                 <li>
                   <span className="text-gray-400">&bull; twitter: </span>
-                  <a href="https://twitter.com/pavitrakushwaha" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 hover:underline transition-colors">@pavitrakushwaha</a>
+                  <a href="https://x.com/Pavitra_Kushwah" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 hover:underline transition-colors">@Pavitra_Kushwah</a>
                 </li>
                 <li>
                   <span className="text-gray-400">&bull; linkedin: </span>
-                  <a href="https://linkedin.com/in/pavitrakushwaha" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 hover:underline transition-colors">pavitrakushwaha</a>
+                  <a href="https://www.linkedin.com/in/pavitra-kushwaha/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 hover:underline transition-colors">pavitra-kushwaha</a>
                 </li>
                 <li>
                   <span className="text-gray-400">&bull; instagram: </span>
-                  <a href="https://instagram.com/pavitrakushwaha" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 hover:underline transition-colors">@pavitrakushwaha</a>
+                  <a href="https://instagram.com/pavitrakuswaha" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 hover:underline transition-colors">@pavitrakuswaha</a>
                 </li>
                 <li>
                   <span className="text-gray-400">&bull; github: </span>
