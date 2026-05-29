@@ -1,29 +1,47 @@
+"use client";
+
+import { useState } from "react";
+
 export function Blog() {
-  const posts = [
-    { date: "Aug 24", title: "HOW I REVERSE ENGINEERED...." },
-    { date: "Oct 24", title: "HUMAN ON MACHINE YEAR 2045" },
-  ];
+  const [email, setEmail] = useState("");
+  const [sent, setSent] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email) {
+      window.location.href = `mailto:pavitra@paxus.in?subject=Notify me for new blogs&body=Hey Pavitra, notify me when you write something new! My email: ${email}`;
+      setSent(true);
+    }
+  };
 
   return (
     <>
       <section id="blog" className="px-5 p-8 max-w-6xl mx-auto bg-white">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-gray-900 text-4xl font-bold font-serif">Blog</h1>
-          <div className="mt-2 text-xl sm:text-2xl text-gray-800">Here&apos;s some writing about cool things I&apos;ve done!</div>
+          <div className="mt-2 text-xl text-gray-500 font-mono">writing soon. stay tuned.</div>
           
-          <div className="mt-8 grid sm:grid-cols-2 gap-6">
-            {posts.map((post, i) => (
-              <a 
-                key={i}
-                href="#"
-                className="hover:-rotate-1 hover:scale-105 transform transition p-4 rounded-lg relative group overflow-hidden border border-orange-400 bg-orange-400/10 flex flex-col justify-between"
-              >
-                <div className="text-left text-black flex flex-col gap-2 relative z-10">
-                  <p className="text-sm font-serif w-fit rounded-md px-1 py-0.5 bg-orange-400/40">{post.date}</p>
-                  <h2 className="text-2xl font-serif leading-tight mt-2">{post.title}</h2>
-                </div>
-              </a>
-            ))}
+          <div className="mt-8 max-w-md">
+            {sent ? (
+              <p className="font-mono text-sm text-green-600">you&apos;re on the list :)</p>
+            ) : (
+              <form onSubmit={handleSubmit} className="flex gap-2">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="your email — i'll ping you when i write"
+                  required
+                  className="flex-1 border border-gray-300 rounded-md px-3 py-2 text-sm font-mono outline-none focus:border-gray-800 transition-colors"
+                />
+                <button
+                  type="submit"
+                  className="border border-gray-800 px-4 py-2 rounded-md text-sm font-mono hover:bg-gray-800 hover:text-white transition-colors"
+                >
+                  notify me
+                </button>
+              </form>
+            )}
           </div>
         </div>
       </section>
