@@ -26,7 +26,7 @@ export function Highlights() {
             href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0zEjLSCnIqsgwYPTiySzMySwoTlXIyy9LBACNignl&q=iqlipse+nova&oq=iqlip&gs_lcrp=EgZjaHJvbWUqBwgBEC4YgAQyBggAEEUYOTIHCAEQLhiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABNIBCDM2NzlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-yellow-600 font-semibold hover:underline"
+            className="text-gray-400 font-medium hover:text-gray-600 transition-colors underline decoration-gray-300"
           >
             Iqlipse Nova
           </a>
