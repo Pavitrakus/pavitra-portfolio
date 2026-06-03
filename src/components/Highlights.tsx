@@ -8,7 +8,28 @@ export function Highlights() {
 
   const highlights = [
     {
-      icon: <div className="w-6 h-6 rounded bg-blue-100 text-blue-700 flex items-center justify-center shrink-0"><svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2.12-1.15V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72l5 2.73 5-2.73v3.72z"/></svg></div>,
+      icon: <div className="w-6 h-6 rounded bg-yellow-100 text-yellow-500 flex items-center justify-center shrink-0 text-base leading-none">🦄</div>,
+      text: (
+        <span>
+          <span className="font-bold text-yellow-500">🏆 #1</span> across 3,500+ — India&apos;s{" "}
+          <span className="font-bold text-gray-900">Top Young Founder of the Year &apos;26</span> at{" "}
+          <a
+            href="https://uniform2unicorn.polariscampus.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-yellow-500 font-bold hover:underline"
+          >
+            Uniform2Unicorn by Polaris
+          </a>
+          {" "}— won ₹1,00,000 + ₹10,00,000 in credits.{" "}
+          <span className="text-gray-400 text-sm font-normal">
+            (special thanks to the team: Aditya Bhatia & Tanish Anand 🙌)
+          </span>
+        </span>
+      ),
+    },
+    {
+      icon: <div className="w-6 h-6 rounded bg-blue-100 text-blue-700 flex items-center justify-center shrink-0"><svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2.12-1.15V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72l5 2.73 5-2.73v3.72z" /></svg></div>,
       text: (
         <span>
           Research Fellow at IIT Kanpur, working under{" "}
@@ -58,7 +79,7 @@ export function Highlights() {
       ),
     },
     {
-      icon: <div className="w-6 h-6 rounded bg-purple-100 text-purple-700 flex items-center justify-center shrink-0"><svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/><path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/></svg></div>,
+      icon: <div className="w-6 h-6 rounded bg-purple-100 text-purple-700 flex items-center justify-center shrink-0"><svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z" /><path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" /></svg></div>,
       text: (
         <span>
           Interviewed{" "}
@@ -93,7 +114,7 @@ export function Highlights() {
       ),
     },
     {
-      icon: <div className="w-6 h-6 rounded bg-red-100 text-red-700 flex items-center justify-center shrink-0"><svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg></div>,
+      icon: <div className="w-6 h-6 rounded bg-red-100 text-red-700 flex items-center justify-center shrink-0"><svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z" /></svg></div>,
       text: (
         <span>
           Independently identified a significant security vulnerability in a major AI platform (happy to discuss privately){" "}
@@ -113,7 +134,7 @@ export function Highlights() {
       ),
     },
     {
-      icon: <div className="w-6 h-6 rounded bg-green-100 text-green-700 flex items-center justify-center shrink-0"><svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5c-.49 0-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-6 8h-4v-2h4v2zm0-4h-4v-2h4v2z"/></svg></div>,
+      icon: <div className="w-6 h-6 rounded bg-green-100 text-green-700 flex items-center justify-center shrink-0"><svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5c-.49 0-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-6 8h-4v-2h4v2zm0-4h-4v-2h4v2z" /></svg></div>,
       text: (
         <span>
           Discovered a pricing logic vulnerability in a major quick-commerce platform&apos;s API{" "}
@@ -133,7 +154,7 @@ export function Highlights() {
       ),
     },
     {
-      icon: <div className="w-6 h-6 rounded bg-yellow-100 text-yellow-700 flex items-center justify-center shrink-0"><svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H7v2h10v-2h-4v-3.1a5.01 5.01 0 0 0 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg></div>,
+      icon: <div className="w-6 h-6 rounded bg-yellow-100 text-yellow-700 flex items-center justify-center shrink-0"><svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H7v2h10v-2h-4v-3.1a5.01 5.01 0 0 0 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z" /></svg></div>,
       text: <span>Won 15+ hackathons in the last 2 months.</span>,
     },
     {
@@ -155,11 +176,11 @@ export function Highlights() {
       ),
     },
     {
-      icon: <div className="w-6 h-6 rounded bg-rose-100 text-rose-700 flex items-center justify-center shrink-0"><svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12zm-5-6l-7 4V7z"/></svg></div>,
+      icon: <div className="w-6 h-6 rounded bg-rose-100 text-rose-700 flex items-center justify-center shrink-0"><svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12zm-5-6l-7 4V7z" /></svg></div>,
       text: <span>Former Content Analyst at KuKu TV.</span>,
     },
     {
-      icon: <div className="w-6 h-6 rounded bg-sky-100 text-sky-700 flex items-center justify-center shrink-0"><svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg></div>,
+      icon: <div className="w-6 h-6 rounded bg-sky-100 text-sky-700 flex items-center justify-center shrink-0"><svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" /></svg></div>,
       text: <span>Published a research paper on Synthetic Intelligence at 16.</span>,
     },
   ];
