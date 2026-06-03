@@ -11,7 +11,7 @@ export function Highlights() {
       icon: <div className="w-6 h-6 rounded bg-yellow-100 text-yellow-500 flex items-center justify-center shrink-0 text-base leading-none">🦄</div>,
       text: (
         <span>
-          <span className="font-bold text-yellow-500">🏆 #1</span> across 3,500+ — India&apos;s{" "}
+          <span className="font-bold text-yellow-500">#1</span> across 3,500+, India&apos;s{" "}
           <span className="font-bold text-gray-900">Top Young Founder of the Year &apos;26</span> at{" "}
           <a
             href="https://uniform2unicorn.polariscampus.com/"
@@ -21,9 +21,18 @@ export function Highlights() {
           >
             Uniform2Unicorn by Polaris
           </a>
-          {" "}— won ₹1,00,000 + ₹10,00,000 in credits.{" "}
+          {" "}won ₹1,00,000 + ₹10,00,000 in credits & an exclusive dinner with{" "}
+          <a
+            href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0zEjLSCnIqsgwYPTiySzMySwoTlXIyy9LBACNignl&q=iqlipse+nova&oq=iqlip&gs_lcrp=EgZjaHJvbWUqBwgBEC4YgAQyBggAEEUYOTIHCAEQLhiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABNIBCDM2NzlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-yellow-600 font-semibold hover:underline"
+          >
+            Iqlipse Nova
+          </a>
+          {" "}
           <span className="text-gray-400 text-sm font-normal">
-            (special thanks to the team: Aditya Bhatia & Tanish Anand 🙌)
+            (special thanks to the team: Aditya Bhatia & Tanish Anand)
           </span>
         </span>
       ),
