@@ -19,14 +19,14 @@ export function Highlights() {
             rel="noopener noreferrer"
             className="text-yellow-500 font-bold hover:underline"
           >
-            Uniform2Unicorn by Polaris
+            Uniform2Unicorn
           </a>
           {" "}won ₹1,00,000 + ₹10,00,000 in credits & an exclusive dinner with{" "}
           <a
             href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0zEjLSCnIqsgwYPTiySzMySwoTlXIyy9LBACNignl&q=iqlipse+nova&oq=iqlip&gs_lcrp=EgZjaHJvbWUqBwgBEC4YgAQyBggAEEUYOTIHCAEQLhiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABNIBCDM2NzlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 font-medium hover:text-gray-600 transition-colors underline decoration-gray-300"
+            className="text-gray-500 font-medium hover:text-gray-700 transition-colors underline decoration-gray-400"
           >
             Iqlipse Nova
           </a>
