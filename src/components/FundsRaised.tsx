@@ -13,40 +13,33 @@ export function FundsRaised() {
 
           <Link href="/funds" className="block group">
             <motion.div
-              whileHover={{ y: -4 }}
+              whileHover={{ y: -2 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              className="bg-stone-50/60 border border-gray-100 rounded-2xl p-8 sm:p-12 relative overflow-hidden transition-all duration-300 group-hover:border-gray-200 group-hover:bg-stone-50 cursor-pointer"
+              className="bg-stone-50/60 border border-gray-100 rounded-2xl p-6 sm:p-10 transition-all duration-300 group-hover:border-gray-200 group-hover:bg-stone-50 cursor-pointer"
             >
+              <span className="font-mono text-xs text-gray-400 uppercase tracking-widest block mb-4">Total Funding &amp; Grants</span>
 
-
-              <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
-                <div>
-                  <span className="font-mono text-xs text-gray-400 uppercase tracking-widest block mb-2">Total Funding & Grants</span>
-                  
-                  <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4">
-                    <span className="text-5xl sm:text-6xl font-bold font-serif text-gray-900 tracking-tight">
-                      $43,015
-                    </span>
-                    <span className="text-gray-400 font-serif text-3xl sm:text-4xl">/</span>
-                    <span className="text-3xl sm:text-4xl font-semibold font-mono text-gray-500 tracking-tight">
-                      ₹35.9 Lakhs
-                    </span>
-                  </div>
-                  
-                  <p className="font-mono text-sm text-gray-400 mt-4 max-w-xl leading-relaxed">
-                    across incubators, grants &amp; angel rounds.
-                  </p>
-                </div>
-
-                <div className="shrink-0 flex items-center gap-2 text-gray-400 font-mono text-sm group-hover:text-gray-800 group-hover:translate-x-1 transition-all duration-300">
-                  <span>view ledger</span>
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </div>
+              {/* Numbers — stacked on mobile, inline on sm+ */}
+              <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-4">
+                <span className="text-4xl font-bold font-serif text-gray-900 tracking-tight sm:text-6xl">
+                  $43,015
+                </span>
+                <span className="hidden sm:inline text-gray-300 font-serif text-4xl">/</span>
+                <span className="text-2xl font-semibold font-sans text-gray-400 tracking-tight sm:text-4xl">
+                  &#x20B9;35.9 Lakhs
+                </span>
               </div>
 
+              <p className="font-mono text-sm text-gray-400 mt-4 leading-relaxed">
+                across incubators, grants &amp; angel rounds.
+              </p>
 
+              <div className="mt-6 flex items-center gap-2 text-gray-400 font-mono text-sm group-hover:text-gray-700 group-hover:gap-3 transition-all duration-300">
+                <span>view ledger</span>
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
             </motion.div>
           </Link>
         </div>
