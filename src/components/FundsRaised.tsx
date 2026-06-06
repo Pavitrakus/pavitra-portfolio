@@ -15,10 +15,9 @@ export function FundsRaised() {
             <motion.div
               whileHover={{ y: -4 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              className="bg-stone-50/60 border border-gray-100 rounded-2xl p-8 sm:p-12 relative overflow-hidden transition-all duration-300 group-hover:border-emerald-200 group-hover:bg-emerald-50/10 group-hover:shadow-[0_8px_30px_rgb(0,0,0,0.02)] cursor-pointer"
+              className="bg-stone-50/60 border border-gray-100 rounded-2xl p-8 sm:p-12 relative overflow-hidden transition-all duration-300 group-hover:border-gray-200 group-hover:bg-stone-50 cursor-pointer"
             >
-              {/* Subtle ambient decorative gradient background on hover */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500/0 via-emerald-500/0 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
 
               <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div>
@@ -29,32 +28,25 @@ export function FundsRaised() {
                       $43,015
                     </span>
                     <span className="text-gray-400 font-serif text-3xl sm:text-4xl">/</span>
-                    <span className="text-3xl sm:text-4xl font-semibold font-mono text-emerald-600 tracking-tight">
+                    <span className="text-3xl sm:text-4xl font-semibold font-mono text-gray-500 tracking-tight">
                       ₹35.9 Lakhs
                     </span>
                   </div>
                   
-                  <p className="text-gray-500 mt-4 text-base sm:text-lg max-w-xl font-sans leading-relaxed">
-                    Raised through seed investments, competitive startup grants, and top-tier incubator backing to fuel development of intelligent agentic architectures.
+                  <p className="font-mono text-sm text-gray-400 mt-4 max-w-xl leading-relaxed">
+                    across incubators, grants &amp; angel rounds.
                   </p>
                 </div>
 
-                <div className="shrink-0 flex items-center gap-2 text-emerald-600 font-mono text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
-                  <span>view funding ledger</span>
+                <div className="shrink-0 flex items-center gap-2 text-gray-400 font-mono text-sm group-hover:text-gray-800 group-hover:translate-x-1 transition-all duration-300">
+                  <span>view ledger</span>
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </div>
               </div>
 
-              {/* Minimal inline tags for backers */}
-              <div className="mt-8 pt-6 border-t border-gray-100 flex flex-wrap items-center gap-2 sm:gap-3 text-xs text-gray-400 font-mono">
-                <span className="text-gray-300">Backers:</span>
-                <span className="bg-white border border-gray-200 rounded px-2.5 py-1 text-gray-600 shadow-sm">Y Combinator</span>
-                <span className="bg-white border border-gray-200 rounded px-2.5 py-1 text-gray-600 shadow-sm">IIT Kanpur</span>
-                <span className="bg-white border border-gray-200 rounded px-2.5 py-1 text-gray-600 shadow-sm">Uniform2Unicorn</span>
-                <span className="bg-white border border-gray-200 rounded px-2.5 py-1 text-gray-600 shadow-sm">SparkX IIT Bombay</span>
-              </div>
+
             </motion.div>
           </Link>
         </div>
