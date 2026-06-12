@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Script from "next/script";
 
 interface FundSource {
   id: string;
@@ -52,8 +53,40 @@ export default function FundsPage() {
     },
   ];
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Funding Ledger - Pavitra Kushwaha",
+    "description": "Public ledger of funding, grants, and investments received. Cumulative funds: $43,015 USD.",
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "Funding Sources",
+      "itemListElement": fundsList.map((fund, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+          "@type": "FinancialProduct",
+          "name": fund.name,
+          "description": fund.details,
+          "category": fund.category,
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "price": fund.amountUSD.replace(/[^0-9.]/g, '')
+          }
+        }
+      }))
+    }
+  };
+
   return (
     <main className="min-h-screen bg-white px-5 py-16 text-gray-800">
+      <Script
+        id="funds-jsonld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      
       <div className="max-w-5xl mx-auto">
         
         {/* Back link */}
@@ -71,15 +104,23 @@ export default function FundsPage() {
             {/* CUMULATIVE FUNDS */}
             <div>
               <h3 className="text-xs tracking-[0.2em] text-gray-400 font-mono mb-6 uppercase">CUMULATIVE FUNDS</h3>
-              <div className="font-serif text-4xl sm:text-5xl font-bold text-gray-900">$43,015 USD</div>
-              <div className="font-mono text-lg text-gray-500 mt-2">₹35,91,750 INR</div>
+              <div className="font-serif text-4xl sm:text-5xl font-bold text-gray-900">
+                <data value="43015">$43,015 USD</data>
+              </div>
+              <div className="font-mono text-lg text-gray-500 mt-2">
+                <data value="3591750">₹35,91,750 INR</data>
+              </div>
             </div>
 
             {/* TOTAL POOL */}
             <div>
               <h3 className="text-xs tracking-[0.2em] text-gray-400 font-mono mb-6 uppercase">TOTAL POOL</h3>
-              <div className="font-serif text-4xl sm:text-5xl font-bold text-gray-900">$50,919 USD</div>
-              <div className="font-mono text-lg text-gray-500 mt-2">₹42,51,625 INR</div>
+              <div className="font-serif text-4xl sm:text-5xl font-bold text-gray-900">
+                <data value="50919">$50,919 USD</data>
+              </div>
+              <div className="font-mono text-lg text-gray-500 mt-2">
+                <data value="4251625">₹42,51,625 INR</data>
+              </div>
               <p className="font-mono text-xs text-gray-400 mt-4 leading-relaxed max-w-sm">
                 * Includes incubator backing, pre-seed angel commitments, competitive grants, and hackathon prizes.
               </p>
@@ -104,7 +145,9 @@ export default function FundsPage() {
                 <li key={fund.id} className="border-b border-gray-100 pb-8 last:border-0 last:pb-0">
                   <div className="flex justify-between items-baseline gap-4 mb-2">
                     <span className="font-serif font-bold text-lg text-gray-900 normal-case">{fund.name}</span>
-                    <span className="text-gray-800 shrink-0 font-medium">{fund.amountUSD} / {fund.amountINR}</span>
+                    <span className="text-gray-800 shrink-0 font-medium">
+                      <data value={fund.amountUSD.replace(/[^0-9.]/g, '')}>{fund.amountUSD}</data> / <data value={fund.amountINR.replace(/[^0-9.]/g, '')}>{fund.amountINR}</data>
+                    </span>
                   </div>
                   
                   <div className="flex gap-2 mb-3 text-xs text-gray-400">

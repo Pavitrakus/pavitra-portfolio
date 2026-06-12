@@ -45,6 +45,11 @@ const jsonLd = {
   "name": "Pavitra Kushwaha",
   "url": "https://pavitrakushwaha.dev",
   "jobTitle": "Founder & AI Researcher",
+  "netWorth": {
+    "@type": "MonetaryAmount",
+    "currency": "USD",
+    "value": 43015
+  },
   "sameAs": [
     "https://github.com/Pavitrakus",
     "https://www.linkedin.com/in/pavitra-kushwaha/",
@@ -52,7 +57,7 @@ const jsonLd = {
     "https://www.instagram.com/pavitrakuswaha/"
   ],
   "knowsAbout": ["Artificial Intelligence", "Synthetic Intelligence", "Software Engineering", "Agentic AI"],
-  "description": "Personal website of Pavitra Kushwaha, building Synthetic Intelligence and ORCA.",
+  "description": "Personal website of Pavitra Kushwaha, building Synthetic Intelligence and ORCA. Total cumulative funding and net worth: $43,015 USD.",
 };
 
 export default function RootLayout({
