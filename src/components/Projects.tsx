@@ -8,6 +8,8 @@ export function Projects() {
     { year: "2024", name: "LumenSeed", desc: "GenAI healthcare platform. 1st Prize at Sprakx Startup Pitching, IIT Bombay.", image: "/lumenseed.png" },
   ];
 
+  const heliosLink = "/heliosstresstest";
+
   return (
     <section id="projects" className="px-5 pb-16 pt-8 max-w-6xl mx-auto bg-white">
       <div className="max-w-5xl mx-auto">
@@ -46,6 +48,59 @@ export function Projects() {
               )}
             </Card>
           )})}
+
+          {/* Helios Stress Card */}
+          <a
+            href={heliosLink}
+            className="rounded-lg relative group shadow-lg h-48 sm:h-72 border border-black/20 flex flex-col justify-between overflow-hidden hover:-translate-y-1 transition-transform cursor-pointer block"
+            style={{ background: '#000' }}
+          >
+            {/* Robotic image section */}
+            <div className="absolute inset-0 z-0 flex items-center justify-center bg-black overflow-hidden">
+              {/* Scanline overlay */}
+              <div
+                className="absolute inset-0 z-0 pointer-events-none"
+                style={{
+                  backgroundImage: "repeating-linear-gradient(0deg, rgba(0,255,100,0.04) 0px, rgba(0,255,100,0.04) 1px, transparent 1px, transparent 4px)",
+                }}
+              />
+              {/* Glow pulse ring */}
+              <div className="absolute w-32 h-32 rounded-full bg-green-500/10 border border-green-500/30 animate-ping" style={{ animationDuration: "2.5s" }} />
+              <div className="absolute w-48 h-48 rounded-full border border-green-500/10" />
+              {/* Robotic text */}
+              <span
+                style={{
+                  fontFamily: "'Courier New', Courier, monospace",
+                  letterSpacing: "0.18em",
+                  fontSize: "clamp(9px, 1.7vw, 13px)",
+                  textTransform: "uppercase",
+                  color: "#00ff64",
+                  textShadow: "0 0 12px #00ff6488, 0 0 30px #00ff6444",
+                  fontWeight: 700,
+                  textAlign: "center",
+                  lineHeight: 1.5,
+                  position: "relative",
+                  zIndex: 10,
+                  padding: "0 12px",
+                }}
+              >
+                REACTOR<br />HELIOS<br />STRESS TEST
+              </span>
+            </div>
+            {/* Star */}
+            <div className="absolute top-0 right-0 group-hover:opacity-30 transition pr-3 pt-2 z-10">
+              <span className="text-lg text-green-400">★</span>
+            </div>
+            {/* Year badge */}
+            <div className="absolute top-0 left-0 p-2 text-left text-black z-10">
+              <p className="font-serif text-sm bg-white px-1 rounded-md border border-gray-200">2026</p>
+            </div>
+            {/* Info card */}
+            <div className="absolute bottom-2 left-2 p-3 text-left bg-white rounded-md text-black border border-black/20 shadow-md right-2 z-10 group-hover:-translate-y-1 transition-transform">
+              <h2 className="text-xl sm:text-2xl font-semibold font-serif leading-tight">Helios Stress</h2>
+              <p className="text-sm text-gray-700 mt-1 line-clamp-2">Session Stability Under Static and Rotating Prompt Conditions</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
