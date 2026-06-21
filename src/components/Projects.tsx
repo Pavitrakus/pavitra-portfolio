@@ -53,20 +53,20 @@ export function Projects() {
           <a
             href={heliosLink}
             className="rounded-lg relative group shadow-lg h-48 sm:h-72 border border-black/20 flex flex-col justify-between overflow-hidden hover:-translate-y-1 transition-transform cursor-pointer block"
-            style={{ background: '#000000' }}
+            style={{ background: '#c9b49a' }}
           >
-            {/* Full black bg layer — belt + suspenders */}
-            <div style={{ position: 'absolute', inset: 0, background: '#000000', zIndex: 0 }} />
+            {/* Full light-brown bg layer */}
+            <div style={{ position: 'absolute', inset: 0, background: '#c9b49a', zIndex: 0 }} />
             {/* Scanline overlay */}
             <div
               style={{
                 position: 'absolute', inset: 0, zIndex: 1, pointerEvents: 'none',
-                backgroundImage: 'repeating-linear-gradient(0deg, rgba(0,255,100,0.06) 0px, rgba(0,255,100,0.06) 1px, transparent 1px, transparent 4px)',
+                backgroundImage: 'repeating-linear-gradient(0deg, rgba(0,0,0,0.04) 0px, rgba(0,0,0,0.04) 1px, transparent 1px, transparent 4px)',
               }}
             />
             {/* Glow pulse ring */}
-            <div className="absolute w-32 h-32 rounded-full animate-ping" style={{ animationDuration: '2.5s', zIndex: 2, border: '1px solid rgba(0,255,100,0.35)', background: 'rgba(0,255,100,0.07)', top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
-            <div className="absolute w-52 h-52 rounded-full" style={{ zIndex: 2, border: '1px solid rgba(0,255,100,0.12)', top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
+            <div className="absolute w-32 h-32 rounded-full animate-ping" style={{ animationDuration: '2.5s', zIndex: 2, border: '1px solid rgba(0,180,80,0.4)', background: 'rgba(0,180,80,0.08)', top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
+            <div className="absolute w-52 h-52 rounded-full" style={{ zIndex: 2, border: '1px solid rgba(0,180,80,0.18)', top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
             {/* Robotic text */}
             <span
               style={{
@@ -76,8 +76,8 @@ export function Projects() {
                 letterSpacing: '0.2em',
                 fontSize: 'clamp(13px, 2.4vw, 18px)',
                 textTransform: 'uppercase',
-                color: '#00ff64',
-                textShadow: '0 0 14px #00ff6499, 0 0 32px #00ff6455',
+                color: '#1a7a3c',
+                textShadow: '0 0 10px rgba(0,180,80,0.3)',
                 fontWeight: 700,
                 textAlign: 'center',
                 lineHeight: 1.7,
@@ -88,7 +88,7 @@ export function Projects() {
             </span>
             {/* Star */}
             <div className="absolute top-0 right-0 group-hover:opacity-30 transition pr-3 pt-2" style={{ zIndex: 20 }}>
-              <span className="text-lg" style={{ color: '#00ff64' }}>★</span>
+              <span className="text-lg" style={{ color: '#1a7a3c' }}>★</span>
             </div>
             {/* Year badge */}
             <div className="absolute top-0 left-0 p-2 text-left" style={{ zIndex: 20 }}>
