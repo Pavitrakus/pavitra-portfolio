@@ -53,50 +53,49 @@ export function Projects() {
           <a
             href={heliosLink}
             className="rounded-lg relative group shadow-lg h-48 sm:h-72 border border-black/20 flex flex-col justify-between overflow-hidden hover:-translate-y-1 transition-transform cursor-pointer block"
-            style={{ background: '#000' }}
+            style={{ background: '#000000' }}
           >
-            {/* Robotic image section */}
-            <div className="absolute inset-0 z-0 flex items-center justify-center bg-black overflow-hidden">
-              {/* Scanline overlay */}
-              <div
-                className="absolute inset-0 z-0 pointer-events-none"
-                style={{
-                  backgroundImage: "repeating-linear-gradient(0deg, rgba(0,255,100,0.04) 0px, rgba(0,255,100,0.04) 1px, transparent 1px, transparent 4px)",
-                }}
-              />
-              {/* Glow pulse ring */}
-              <div className="absolute w-32 h-32 rounded-full bg-green-500/10 border border-green-500/30 animate-ping" style={{ animationDuration: "2.5s" }} />
-              <div className="absolute w-48 h-48 rounded-full border border-green-500/10" />
-              {/* Robotic text */}
-              <span
-                style={{
-                  fontFamily: "'Courier New', Courier, monospace",
-                  letterSpacing: "0.18em",
-                  fontSize: "clamp(9px, 1.7vw, 13px)",
-                  textTransform: "uppercase",
-                  color: "#00ff64",
-                  textShadow: "0 0 12px #00ff6488, 0 0 30px #00ff6444",
-                  fontWeight: 700,
-                  textAlign: "center",
-                  lineHeight: 1.5,
-                  position: "relative",
-                  zIndex: 10,
-                  padding: "0 12px",
-                }}
-              >
-                REACTOR<br />HELIOS<br />STRESS TEST
-              </span>
-            </div>
+            {/* Full black bg layer — belt + suspenders */}
+            <div style={{ position: 'absolute', inset: 0, background: '#000000', zIndex: 0 }} />
+            {/* Scanline overlay */}
+            <div
+              style={{
+                position: 'absolute', inset: 0, zIndex: 1, pointerEvents: 'none',
+                backgroundImage: 'repeating-linear-gradient(0deg, rgba(0,255,100,0.06) 0px, rgba(0,255,100,0.06) 1px, transparent 1px, transparent 4px)',
+              }}
+            />
+            {/* Glow pulse ring */}
+            <div className="absolute w-32 h-32 rounded-full animate-ping" style={{ animationDuration: '2.5s', zIndex: 2, border: '1px solid rgba(0,255,100,0.35)', background: 'rgba(0,255,100,0.07)', top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
+            <div className="absolute w-52 h-52 rounded-full" style={{ zIndex: 2, border: '1px solid rgba(0,255,100,0.12)', top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
+            {/* Robotic text */}
+            <span
+              style={{
+                position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)',
+                zIndex: 10,
+                fontFamily: "'Courier New', Courier, monospace",
+                letterSpacing: '0.2em',
+                fontSize: 'clamp(13px, 2.4vw, 18px)',
+                textTransform: 'uppercase',
+                color: '#00ff64',
+                textShadow: '0 0 14px #00ff6499, 0 0 32px #00ff6455',
+                fontWeight: 700,
+                textAlign: 'center',
+                lineHeight: 1.7,
+                whiteSpace: 'nowrap',
+              }}
+            >
+              REACTOR<br />HELIOS<br />STRESS TEST
+            </span>
             {/* Star */}
-            <div className="absolute top-0 right-0 group-hover:opacity-30 transition pr-3 pt-2 z-10">
-              <span className="text-lg text-green-400">★</span>
+            <div className="absolute top-0 right-0 group-hover:opacity-30 transition pr-3 pt-2" style={{ zIndex: 20 }}>
+              <span className="text-lg" style={{ color: '#00ff64' }}>★</span>
             </div>
             {/* Year badge */}
-            <div className="absolute top-0 left-0 p-2 text-left text-black z-10">
-              <p className="font-serif text-sm bg-white px-1 rounded-md border border-gray-200">2026</p>
+            <div className="absolute top-0 left-0 p-2 text-left" style={{ zIndex: 20 }}>
+              <p className="font-serif text-sm bg-white px-1 rounded-md border border-gray-200" style={{ color: '#000' }}>2026</p>
             </div>
             {/* Info card */}
-            <div className="absolute bottom-2 left-2 p-3 text-left bg-white rounded-md text-black border border-black/20 shadow-md right-2 z-10 group-hover:-translate-y-1 transition-transform">
+            <div className="absolute bottom-2 left-2 p-3 text-left bg-white rounded-md border border-black/20 shadow-md right-2 group-hover:-translate-y-1 transition-transform" style={{ zIndex: 20, color: '#000' }}>
               <h2 className="text-xl sm:text-2xl font-semibold font-serif leading-tight">Helios Stress</h2>
               <p className="text-sm text-gray-700 mt-1 line-clamp-2">Session Stability Under Static and Rotating Prompt Conditions</p>
             </div>
