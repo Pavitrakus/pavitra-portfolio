@@ -46,3 +46,47 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #d1d5db;
 }
+
+/* ─── Mobile density — more content per screen (below sm breakpoint) ─── */
+@media (max-width: 639px) {
+  /* Tighten all sections */
+  section {
+    padding-top: 1.75rem !important;
+    padding-bottom: 1.25rem !important;
+  }
+
+  /* Hero: less top breathing room */
+  section.relative.pt-32 {
+    padding-top: 5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  /* Heading scale-down */
+  h1 { font-size: 1.75rem !important; line-height: 1.2 !important; }
+  h2 { font-size: 1.35rem !important; line-height: 1.25 !important; }
+  h3 { font-size: 1.1rem  !important; }
+
+  /* Body text */
+  p, li, span.text-xl, div.text-xl, div.text-2xl {
+    font-size: 0.95rem !important;
+    line-height: 1.55 !important;
+  }
+
+  /* Highlights list — tighter gaps */
+  ul.gap-3 { gap: 0.5rem !important; }
+
+  /* Project cards — shorter on mobile */
+  .h-48 { height: 9rem !important; }
+
+  /* Blog/subscription form */
+  .mt-10 { margin-top: 1.25rem !important; }
+  .mt-8  { margin-top: 1rem    !important; }
+  .mt-6  { margin-top: 0.75rem !important; }
+
+  /* SVG section dividers — slimmer */
+  svg.h-6 { height: 0.875rem !important; }
+
+  /* FundsRaised card — less padding */
+  .p-6 { padding: 1rem !important; }
+}
+
