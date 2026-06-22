@@ -1,7 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async rewrites() {
+    return [
+      {
+        source: '/heliosstresstest',
+        destination: '/helios_stress_report.html',
+      },
+    ]
+  },
 };
 
 export default nextConfig;
