@@ -76,15 +76,10 @@
   ul.gap-3 { gap: 0.5rem !important; }
 
   /* Project cards — shorter on mobile */
-  .h-48 { height: 9rem !important; }
+  /* .h-48 removed: 9rem caused year badge + info card to collide */
 
-  /* Blog/subscription form */
-  .mt-10 { margin-top: 1.25rem !important; }
-  .mt-8  { margin-top: 1rem    !important; }
-  .mt-6  { margin-top: 0.75rem !important; }
-
-  /* SVG section dividers — slimmer */
-  svg.h-6 { height: 0.875rem !important; }
+  /* SVG section dividers — kept at natural size to avoid breaking wavy shape */
+  /* svg.h-6 removed: was crushing dividers into a flat line */
 
   /* FundsRaised card — less padding */
   .p-6 { padding: 1rem !important; }
